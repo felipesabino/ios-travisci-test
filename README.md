@@ -6,7 +6,12 @@ Travis-CI test with iOS
 
 # TODO
 
-- ✔ build 
+- ✔ build
 - ✔ code sign
 - deploy / upload to Test flight
 - generate archive to upload to app store?
+
+
+# Remarks
+
+Based on http://www.objc.io/issue-6/travis-ci.html
