@@ -11,7 +11,9 @@ after_success:
 env:
   global:
   - APP_NAME="TravisCiIntegration"
-  - 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC"'
+  - ! 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC"'
   - PROFILE_NAME="Taqtile_Travis_Test_Adhoc"
   - secure: LhwhZv4mQPDkt+qGIMhfijAV0FzZGfJxkMetU0/NSvF9sHwJL4aFm9XOrIQd9nCHPL+xuZ5mkL2uhhWbF7Yo6lBLtSp3jjQYedWdocTQF6/MXQh2rCxMW3Az9ajSW/AATESOO/8W0XU2kZomOtG/jmELe7XgbinbYNdF5kb6bmw=
   - secure: E9sDV8DX4oM159irpo9FR9YHvO4ubb8iFve5kA2YhIvH01yO5pP0l/chDCIYmc8umFU5h8oTgu8iHdF6vUPIiDr5D/KzR5W7dLUB6kJ+fnfYMjsChjacf2zWiYqT9Wt8LP9MUPzF5YIHU8myw2z8G5XEoW7XWmmZX0NwyMUIno4=
+  - secure: DpV+Rd32LNQptLvxF4CX/LnQUPIp7Oj7gZBClCeEKV1s0safMUliGLfeAxi6TBo0rUACEJ9sLPzizElOc+NZPPm+2v86mGN/eqlVeVQVomNbx9tGt7WInDad5q4zRJTNj4TnotsBC4j9N7ndeaqU82ulGjiOFt41KirHznoaMjM=
+  - secure: Q6JxyDL8F35s7nRFbd7Lk+WskmxWHrYbzH1URqVDnzXWBxGUgPTuPXGogiD3IAAOGpfk4sa1mksedTd+T3Zt8d9Lsmc+ZQBXJRIjhPQ5wEKxqJ6HSKWd+6GXZXCq/N4fPP5V6+mAgmhlkBfzaiBJjIOH60f5WuzEmtZ5OMQ1Aik=
