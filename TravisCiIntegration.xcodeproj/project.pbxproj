@@ -10,7 +10,38 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>17D508A16CE5450BBEC3B9C4</key>
+		<key>13E78ABF4B7F43F09477BB15</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1B599536E3AF4E7597E8AF31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57146993A56044CD96615E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32C0A65B95E24005823087B4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -21,18 +52,11 @@
 			<key>name</key>
 			<string>Pods.xcconfig</string>
 			<key>path</key>
-			<string>../Pods/Pods.xcconfig</string>
+			<string>Pods/Pods.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6C86A03299EE4D1DAB99D535</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7E2AC613449C4CD88BD4E463</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7E2AC613449C4CD88BD4E463</key>
+		<key>57146993A56044CD96615E4D</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -45,7 +69,7 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>BD4F9E0C2CDB483CA70A6BF4</key>
+		<key>7AF5B8C70D7F4FE586E66404</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -75,45 +99,22 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>E23E7822187773E800DD95E2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E23E7823187773E800DD95E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E23E7822187773E800DD95E2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E2400FDA187772E900E76C4C</key>
+		<key>E212C0BA18784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E23E7822187773E800DD95E2</string>
-				<string>E2400FEC187772E900E76C4C</string>
-				<string>E240100E187772E900E76C4C</string>
-				<string>E2400FE5187772E900E76C4C</string>
-				<string>E2400FE4187772E900E76C4C</string>
-				<string>17D508A16CE5450BBEC3B9C4</string>
+				<string>E212C0CC18784AED004F3255</string>
+				<string>E212C0EB18784AEE004F3255</string>
+				<string>E212C0C518784AED004F3255</string>
+				<string>E212C0C418784AED004F3255</string>
+				<string>32C0A65B95E24005823087B4</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FDB187772E900E76C4C</key>
+		<key>E212C0BB18784AED004F3255</key>
 		<dict>
 			<key>attributes</key>
 			<dict>
@@ -123,15 +124,15 @@ fi
 				<string>Felipe Sabino</string>
 				<key>TargetAttributes</key>
 				<dict>
-					<key>E2401006187772E900E76C4C</key>
+					<key>E212C0E318784AEE004F3255</key>
 					<dict>
 						<key>TestTargetID</key>
-						<string>E2400FE2187772E900E76C4C</string>
+						<string>E212C0C218784AED004F3255</string>
 					</dict>
 				</dict>
 			</dict>
 			<key>buildConfigurationList</key>
-			<string>E2400FDE187772E900E76C4C</string>
+			<string>E212C0BE18784AED004F3255</string>
 			<key>compatibilityVersion</key>
 			<string>Xcode 3.2</string>
 			<key>developmentRegion</key>
@@ -146,9 +147,9 @@ fi
 				<string>Base</string>
 			</array>
 			<key>mainGroup</key>
-			<string>E2400FDA187772E900E76C4C</string>
+			<string>E212C0BA18784AED004F3255</string>
 			<key>productRefGroup</key>
-			<string>E2400FE4187772E900E76C4C</string>
+			<string>E212C0C418784AED004F3255</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -157,16 +158,16 @@ fi
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>E2400FE2187772E900E76C4C</string>
-				<string>E2401006187772E900E76C4C</string>
+				<string>E212C0C218784AED004F3255</string>
+				<string>E212C0E318784AEE004F3255</string>
 			</array>
 		</dict>
-		<key>E2400FDE187772E900E76C4C</key>
+		<key>E212C0BE18784AED004F3255</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>E2401016187772E900E76C4C</string>
-				<string>E2401017187772E900E76C4C</string>
+				<string>E212C0F318784AEE004F3255</string>
+				<string>E212C0F418784AEE004F3255</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -175,65 +176,63 @@ fi
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>E2400FDF187772E900E76C4C</key>
+		<key>E212C0BF18784AED004F3255</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E2401000187772E900E76C4C</string>
-				<string>E2400FF7187772E900E76C4C</string>
-				<string>E2400FF3187772E900E76C4C</string>
+				<string>E212C0DD18784AED004F3255</string>
+				<string>E212C0D718784AED004F3255</string>
+				<string>E212C0D318784AED004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E2400FE0187772E900E76C4C</key>
+		<key>E212C0C018784AED004F3255</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E2400FE9187772E900E76C4C</string>
-				<string>E2400FEB187772E900E76C4C</string>
-				<string>E2400FE7187772E900E76C4C</string>
-				<string>6C86A03299EE4D1DAB99D535</string>
+				<string>E212C0C918784AED004F3255</string>
+				<string>E212C0CB18784AED004F3255</string>
+				<string>E212C0C718784AED004F3255</string>
+				<string>1B599536E3AF4E7597E8AF31</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E2400FE1187772E900E76C4C</key>
+		<key>E212C0C118784AED004F3255</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E23E7823187773E800DD95E2</string>
-				<string>E2400FFD187772E900E76C4C</string>
-				<string>E2401002187772E900E76C4C</string>
-				<string>E2400FFA187772E900E76C4C</string>
-				<string>E2400FF1187772E900E76C4C</string>
+				<string>E212C0DF18784AEE004F3255</string>
+				<string>E212C0D118784AED004F3255</string>
+				<string>E212C0DA18784AED004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E2400FE2187772E900E76C4C</key>
+		<key>E212C0C218784AED004F3255</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>E2401018187772E900E76C4C</string>
+			<string>E212C0F518784AEE004F3255</string>
 			<key>buildPhases</key>
 			<array>
-				<string>BD4F9E0C2CDB483CA70A6BF4</string>
-				<string>E2400FDF187772E900E76C4C</string>
-				<string>E2400FE0187772E900E76C4C</string>
-				<string>E2400FE1187772E900E76C4C</string>
-				<string>F3D82C9DEEB045A3B06EEEB6</string>
+				<string>7AF5B8C70D7F4FE586E66404</string>
+				<string>E212C0BF18784AED004F3255</string>
+				<string>E212C0C018784AED004F3255</string>
+				<string>E212C0C118784AED004F3255</string>
+				<string>13E78ABF4B7F43F09477BB15</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -242,15 +241,15 @@ fi
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>TravisTest</string>
+			<string>TravisCiIntegration</string>
 			<key>productName</key>
-			<string>TravisTest</string>
+			<string>TravisCiIntegration</string>
 			<key>productReference</key>
-			<string>E2400FE3187772E900E76C4C</string>
+			<string>E212C0C318784AED004F3255</string>
 			<key>productType</key>
 			<string>com.apple.product-type.application</string>
 		</dict>
-		<key>E2400FE3187772E900E76C4C</key>
+		<key>E212C0C318784AED004F3255</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.application</string>
@@ -259,16 +258,16 @@ fi
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>TravisTest.app</string>
+			<string>TravisCiIntegration.app</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>E2400FE4187772E900E76C4C</key>
+		<key>E212C0C418784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2400FE3187772E900E76C4C</string>
-				<string>E2401007187772E900E76C4C</string>
+				<string>E212C0C318784AED004F3255</string>
+				<string>E212C0E418784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -277,15 +276,15 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FE5187772E900E76C4C</key>
+		<key>E212C0C518784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2400FE6187772E900E76C4C</string>
-				<string>E2400FE8187772E900E76C4C</string>
-				<string>E2400FEA187772E900E76C4C</string>
-				<string>E2401008187772E900E76C4C</string>
-				<string>7E2AC613449C4CD88BD4E463</string>
+				<string>E212C0C618784AED004F3255</string>
+				<string>E212C0C818784AED004F3255</string>
+				<string>E212C0CA18784AED004F3255</string>
+				<string>E212C0E518784AEE004F3255</string>
+				<string>57146993A56044CD96615E4D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -294,7 +293,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FE6187772E900E76C4C</key>
+		<key>E212C0C618784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -307,14 +306,14 @@ fi
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>E2400FE7187772E900E76C4C</key>
+		<key>E212C0C718784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FE6187772E900E76C4C</string>
+			<string>E212C0C618784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FE8187772E900E76C4C</key>
+		<key>E212C0C818784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -327,14 +326,14 @@ fi
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>E2400FE9187772E900E76C4C</key>
+		<key>E212C0C918784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FE8187772E900E76C4C</string>
+			<string>E212C0C818784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FEA187772E900E76C4C</key>
+		<key>E212C0CA18784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -347,41 +346,40 @@ fi
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>E2400FEB187772E900E76C4C</key>
+		<key>E212C0CB18784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FEA187772E900E76C4C</string>
+			<string>E212C0CA18784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FEC187772E900E76C4C</key>
+		<key>E212C0CC18784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2400FF5187772E900E76C4C</string>
-				<string>E2400FF6187772E900E76C4C</string>
-				<string>E2400FF8187772E900E76C4C</string>
-				<string>E2400FFB187772E900E76C4C</string>
-				<string>E2400FFE187772E900E76C4C</string>
-				<string>E2400FFF187772E900E76C4C</string>
-				<string>E2401001187772E900E76C4C</string>
-				<string>E2400FED187772E900E76C4C</string>
+				<string>E212C0D518784AED004F3255</string>
+				<string>E212C0D618784AED004F3255</string>
+				<string>E212C0D818784AED004F3255</string>
+				<string>E212C0DB18784AED004F3255</string>
+				<string>E212C0DC18784AED004F3255</string>
+				<string>E212C0DE18784AEE004F3255</string>
+				<string>E212C0CD18784AED004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
-			<string>TravisTest</string>
+			<string>TravisCiIntegration</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FED187772E900E76C4C</key>
+		<key>E212C0CD18784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2400FEE187772E900E76C4C</string>
-				<string>E2400FEF187772E900E76C4C</string>
-				<string>E2400FF2187772E900E76C4C</string>
-				<string>E2400FF4187772E900E76C4C</string>
+				<string>E212C0CE18784AED004F3255</string>
+				<string>E212C0CF18784AED004F3255</string>
+				<string>E212C0D218784AED004F3255</string>
+				<string>E212C0D418784AED004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -390,22 +388,22 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FEE187772E900E76C4C</key>
+		<key>E212C0CE18784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>TravisTest-Info.plist</string>
+			<string>TravisCiIntegration-Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FEF187772E900E76C4C</key>
+		<key>E212C0CF18784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2400FF0187772E900E76C4C</string>
+				<string>E212C0D018784AED004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXVariantGroup</string>
@@ -414,7 +412,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF0187772E900E76C4C</key>
+		<key>E212C0D018784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -427,14 +425,14 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF1187772E900E76C4C</key>
+		<key>E212C0D118784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FEF187772E900E76C4C</string>
+			<string>E212C0CF18784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FF2187772E900E76C4C</key>
+		<key>E212C0D218784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -445,25 +443,25 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF3187772E900E76C4C</key>
+		<key>E212C0D318784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FF2187772E900E76C4C</string>
+			<string>E212C0D218784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FF4187772E900E76C4C</key>
+		<key>E212C0D418784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>TravisTest-Prefix.pch</string>
+			<string>TravisCiIntegration-Prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF5187772E900E76C4C</key>
+		<key>E212C0D518784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -474,7 +472,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF6187772E900E76C4C</key>
+		<key>E212C0D618784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -485,27 +483,27 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF7187772E900E76C4C</key>
+		<key>E212C0D718784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FF6187772E900E76C4C</string>
+			<string>E212C0D618784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FF8187772E900E76C4C</key>
+		<key>E212C0D818784AED004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2400FF9187772E900E76C4C</string>
+				<string>E212C0D918784AED004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXVariantGroup</string>
 			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
+			<string>Main.storyboard</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FF9187772E900E76C4C</key>
+		<key>E212C0D918784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -514,51 +512,18 @@ fi
 			<key>name</key>
 			<string>Base</string>
 			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
+			<string>Base.lproj/Main.storyboard</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FFA187772E900E76C4C</key>
+		<key>E212C0DA18784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FF8187772E900E76C4C</string>
+			<string>E212C0D818784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2400FFB187772E900E76C4C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E2400FFC187772E900E76C4C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2400FFC187772E900E76C4C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2400FFD187772E900E76C4C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E2400FFB187772E900E76C4C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E2400FFE187772E900E76C4C</key>
+		<key>E212C0DB18784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -569,7 +534,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2400FFF187772E900E76C4C</key>
+		<key>E212C0DC18784AED004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -580,14 +545,14 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401000187772E900E76C4C</key>
+		<key>E212C0DD18784AED004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FFF187772E900E76C4C</string>
+			<string>E212C0DC18784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2401001187772E900E76C4C</key>
+		<key>E212C0DE18784AEE004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -598,82 +563,82 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401002187772E900E76C4C</key>
+		<key>E212C0DF18784AEE004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2401001187772E900E76C4C</string>
+			<string>E212C0DE18784AEE004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2401003187772E900E76C4C</key>
+		<key>E212C0E018784AEE004F3255</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E2401015187772E900E76C4C</string>
+				<string>E212C0F218784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E2401004187772E900E76C4C</key>
+		<key>E212C0E118784AEE004F3255</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E2401009187772E900E76C4C</string>
-				<string>E240100B187772E900E76C4C</string>
-				<string>E240100A187772E900E76C4C</string>
+				<string>E212C0E618784AEE004F3255</string>
+				<string>E212C0E818784AEE004F3255</string>
+				<string>E212C0E718784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E2401005187772E900E76C4C</key>
+		<key>E212C0E218784AEE004F3255</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E2401013187772E900E76C4C</string>
+				<string>E212C0F018784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E2401006187772E900E76C4C</key>
+		<key>E212C0E318784AEE004F3255</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>E240101B187772E900E76C4C</string>
+			<string>E212C0F818784AEE004F3255</string>
 			<key>buildPhases</key>
 			<array>
-				<string>E2401003187772E900E76C4C</string>
-				<string>E2401004187772E900E76C4C</string>
-				<string>E2401005187772E900E76C4C</string>
+				<string>E212C0E018784AEE004F3255</string>
+				<string>E212C0E118784AEE004F3255</string>
+				<string>E212C0E218784AEE004F3255</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>E240100D187772E900E76C4C</string>
+				<string>E212C0EA18784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>TravisTestTests</string>
+			<string>TravisCiIntegrationTests</string>
 			<key>productName</key>
-			<string>TravisTestTests</string>
+			<string>TravisCiIntegrationTests</string>
 			<key>productReference</key>
-			<string>E2401007187772E900E76C4C</string>
+			<string>E212C0E418784AEE004F3255</string>
 			<key>productType</key>
 			<string>com.apple.product-type.bundle.unit-test</string>
 		</dict>
-		<key>E2401007187772E900E76C4C</key>
+		<key>E212C0E418784AEE004F3255</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.cfbundle</string>
@@ -682,11 +647,11 @@ fi
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>TravisTestTests.xctest</string>
+			<string>TravisCiIntegrationTests.xctest</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>E2401008187772E900E76C4C</key>
+		<key>E212C0E518784AEE004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -699,69 +664,69 @@ fi
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>E2401009187772E900E76C4C</key>
+		<key>E212C0E618784AEE004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2401008187772E900E76C4C</string>
+			<string>E212C0E518784AEE004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E240100A187772E900E76C4C</key>
+		<key>E212C0E718784AEE004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FE6187772E900E76C4C</string>
+			<string>E212C0C618784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E240100B187772E900E76C4C</key>
+		<key>E212C0E818784AEE004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2400FEA187772E900E76C4C</string>
+			<string>E212C0CA18784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E240100C187772E900E76C4C</key>
+		<key>E212C0E918784AEE004F3255</key>
 		<dict>
 			<key>containerPortal</key>
-			<string>E2400FDB187772E900E76C4C</string>
+			<string>E212C0BB18784AED004F3255</string>
 			<key>isa</key>
 			<string>PBXContainerItemProxy</string>
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>E2400FE2187772E900E76C4C</string>
+			<string>E212C0C218784AED004F3255</string>
 			<key>remoteInfo</key>
-			<string>TravisTest</string>
+			<string>TravisCiIntegration</string>
 		</dict>
-		<key>E240100D187772E900E76C4C</key>
+		<key>E212C0EA18784AEE004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXTargetDependency</string>
 			<key>target</key>
-			<string>E2400FE2187772E900E76C4C</string>
+			<string>E212C0C218784AED004F3255</string>
 			<key>targetProxy</key>
-			<string>E240100C187772E900E76C4C</string>
+			<string>E212C0E918784AEE004F3255</string>
 		</dict>
-		<key>E240100E187772E900E76C4C</key>
+		<key>E212C0EB18784AEE004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2401014187772E900E76C4C</string>
-				<string>E240100F187772E900E76C4C</string>
+				<string>E212C0F118784AEE004F3255</string>
+				<string>E212C0EC18784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
-			<string>TravisTestTests</string>
+			<string>TravisCiIntegrationTests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E240100F187772E900E76C4C</key>
+		<key>E212C0EC18784AEE004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2401010187772E900E76C4C</string>
-				<string>E2401011187772E900E76C4C</string>
+				<string>E212C0ED18784AEE004F3255</string>
+				<string>E212C0EE18784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -770,22 +735,22 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401010187772E900E76C4C</key>
+		<key>E212C0ED18784AEE004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>TravisTestTests-Info.plist</string>
+			<string>TravisCiIntegrationTests-Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401011187772E900E76C4C</key>
+		<key>E212C0EE18784AEE004F3255</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E2401012187772E900E76C4C</string>
+				<string>E212C0EF18784AEE004F3255</string>
 			</array>
 			<key>isa</key>
 			<string>PBXVariantGroup</string>
@@ -794,7 +759,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401012187772E900E76C4C</key>
+		<key>E212C0EF18784AEE004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -807,32 +772,32 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401013187772E900E76C4C</key>
+		<key>E212C0F018784AEE004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2401011187772E900E76C4C</string>
+			<string>E212C0EE18784AEE004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2401014187772E900E76C4C</key>
+		<key>E212C0F118784AEE004F3255</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>TravisTestTests.m</string>
+			<string>TravisCiIntegrationTests.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2401015187772E900E76C4C</key>
+		<key>E212C0F218784AEE004F3255</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E2401014187772E900E76C4C</string>
+			<string>E212C0F118784AEE004F3255</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E2401016187772E900E76C4C</key>
+		<key>E212C0F318784AEE004F3255</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -899,15 +864,13 @@ fi
 				<string>YES</string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
 			</dict>
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>E2401017187772E900E76C4C</key>
+		<key>E212C0F418784AEE004F3255</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -963,8 +926,6 @@ fi
 				<string>7.0</string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
 				<key>VALIDATE_PRODUCT</key>
 				<string>YES</string>
 			</dict>
@@ -973,24 +934,22 @@ fi
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>E2401018187772E900E76C4C</key>
+		<key>E212C0F518784AEE004F3255</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>E2401019187772E900E76C4C</string>
-				<string>E240101A187772E900E76C4C</string>
+				<string>E212C0F618784AEE004F3255</string>
+				<string>E212C0F718784AEE004F3255</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>E2401019187772E900E76C4C</key>
+		<key>E212C0F618784AEE004F3255</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>17D508A16CE5450BBEC3B9C4</string>
+			<string>32C0A65B95E24005823087B4</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1000,9 +959,9 @@ fi
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>TravisTest/TravisTest-Prefix.pch</string>
+				<string>TravisCiIntegration/TravisCiIntegration-Prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>TravisTest/TravisTest-Info.plist</string>
+				<string>TravisCiIntegration/TravisCiIntegration-Info.plist</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>WRAPPER_EXTENSION</key>
@@ -1013,10 +972,10 @@ fi
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>E240101A187772E900E76C4C</key>
+		<key>E212C0F718784AEE004F3255</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>17D508A16CE5450BBEC3B9C4</string>
+			<string>32C0A65B95E24005823087B4</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1026,9 +985,9 @@ fi
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>TravisTest/TravisTest-Prefix.pch</string>
+				<string>TravisCiIntegration/TravisCiIntegration-Prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>TravisTest/TravisTest-Info.plist</string>
+				<string>TravisCiIntegration/TravisCiIntegration-Info.plist</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>WRAPPER_EXTENSION</key>
@@ -1039,28 +998,26 @@ fi
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>E240101B187772E900E76C4C</key>
+		<key>E212C0F818784AEE004F3255</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>E240101C187772E900E76C4C</string>
-				<string>E240101D187772E900E76C4C</string>
+				<string>E212C0F918784AEE004F3255</string>
+				<string>E212C0FA18784AEE004F3255</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>E240101C187772E900E76C4C</key>
+		<key>E212C0F918784AEE004F3255</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
 				<key>ARCHS</key>
 				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
 				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TravisTest.app/TravisTest</string>
+				<string>$(BUILT_PRODUCTS_DIR)/TravisCiIntegration.app/TravisCiIntegration</string>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
 				<array>
 					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
@@ -1070,14 +1027,14 @@ fi
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>TravisTest/TravisTest-Prefix.pch</string>
+				<string>TravisCiIntegration/TravisCiIntegration-Prefix.pch</string>
 				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 				<array>
 					<string>DEBUG=1</string>
 					<string>$(inherited)</string>
 				</array>
 				<key>INFOPLIST_FILE</key>
-				<string>TravisTestTests/TravisTestTests-Info.plist</string>
+				<string>TravisCiIntegrationTests/TravisCiIntegrationTests-Info.plist</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>TEST_HOST</key>
@@ -1090,14 +1047,14 @@ fi
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>E240101D187772E900E76C4C</key>
+		<key>E212C0FA18784AEE004F3255</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
 				<key>ARCHS</key>
 				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
 				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TravisTest.app/TravisTest</string>
+				<string>$(BUILT_PRODUCTS_DIR)/TravisCiIntegration.app/TravisCiIntegration</string>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
 				<array>
 					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
@@ -1107,9 +1064,9 @@ fi
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>TravisTest/TravisTest-Prefix.pch</string>
+				<string>TravisCiIntegration/TravisCiIntegration-Prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>TravisTestTests/TravisTestTests-Info.plist</string>
+				<string>TravisCiIntegrationTests/TravisCiIntegrationTests-Info.plist</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>TEST_HOST</key>
@@ -1122,32 +1079,8 @@ fi
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>F3D82C9DEEB045A3B06EEEB6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/../Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
 	</dict>
 	<key>rootObject</key>
-	<string>E2400FDB187772E900E76C4C</string>
+	<string>E212C0BB18784AED004F3255</string>
 </dict>
 </plist>

@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AFC3C038-B601-4DCD-A8D1-F91A8B46526B</string>
+	<string>FF6C67E1-7438-4352-A806-C273848576E2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TravisTest</string>
+	<string>TravisCiIntegration</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>64B2B293-18FA-4B0C-A0F4-6303C30FB410</key>
+		<key>F674DCF1-D69E-42D4-8599-5BBA085F4EA8</key>
 		<string>ssh://github.com/felipesabino/ios-travisci-test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TravisTest/TravisTest.xcodeproj/project.xcworkspace</string>
+	<string>TravisCiIntegration/TravisCiIntegration.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>64B2B293-18FA-4B0C-A0F4-6303C30FB410</key>
+		<key>F674DCF1-D69E-42D4-8599-5BBA085F4EA8</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>64B2B293-18FA-4B0C-A0F4-6303C30FB410</string>
+	<string>F674DCF1-D69E-42D4-8599-5BBA085F4EA8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>64B2B293-18FA-4B0C-A0F4-6303C30FB410</string>
+			<string>F674DCF1-D69E-42D4-8599-5BBA085F4EA8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios-travisci-test</string>
 		</dict>

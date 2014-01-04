@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool -workspace TravisTest.xcworkspace -scheme TravisTest
+script: xctool -workspace TravisCiIntegration.xcworkspace -scheme TravisCiIntegration

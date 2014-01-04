@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3D895940-1ADD-4DF8-8862-38A188EF3C45</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TravisCiIntegration</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8C78A274-AC01-42BF-88D3-862811B592A3</key>
+		<string>ssh://github.com/felipesabino/ios-travisci-test.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TravisCiIntegration.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8C78A274-AC01-42BF-88D3-862811B592A3</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/felipesabino/ios-travisci-test.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8C78A274-AC01-42BF-88D3-862811B592A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C78A274-AC01-42BF-88D3-862811B592A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-travisci-test</string>
+		</dict>
+	</array>
+</dict>
+</plist>

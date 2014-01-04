@@ -1,18 +1,18 @@
 //
-//  TravisTestTests.m
-//  TravisTestTests
+//  TravisCiIntegrationTests.m
+//  TravisCiIntegrationTests
 //
-//  Created by Felipe Sabino on 1/3/14.
+//  Created by Felipe Sabino on 1/4/14.
 //  Copyright (c) 2014 Felipe Sabino. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface TravisTestTests : XCTestCase
+@interface TravisCiIntegrationTests : XCTestCase
 
 @end
 
-@implementation TravisTestTests
+@implementation TravisCiIntegrationTests
 
 - (void)setUp
 {
