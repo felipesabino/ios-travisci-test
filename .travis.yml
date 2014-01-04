@@ -2,6 +2,7 @@ language: objective-c
 install: travis/install.sh
 script: travis/script.sh
 before_script:
+- travis/config.sh
 - travis/decrypt-certs.sh
 - travis/add-key.sh
 after_script:
