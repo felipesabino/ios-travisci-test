@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 security create-keychain -p travis ios-build.keychain
 security import ./travis/certs/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
