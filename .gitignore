@@ -5,3 +5,6 @@ build/*
 
 # xcode 4
 xcuserdata
+
+# Mac OS
+.DS_Store
