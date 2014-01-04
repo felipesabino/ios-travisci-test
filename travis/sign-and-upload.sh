@@ -17,7 +17,6 @@ OUTPUTDIR="$PWD/build/Release-iphoneos"
 
 xcrun -log -sdk iphoneos PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTPUTDIR/$APP_NAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
 
-ls $OUTPUTDIR/
 
 # Testflight upload
 
@@ -26,7 +25,7 @@ RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER\nUploaded: $RELEASE_DATE"
 
 curl http://testflightapp.com/api/builds.json \
   -F file="@$OUTPUTDIR/$APP_NAME.ipa" \
-  -F dsym="@$OUTPUTDIR/$APP_NAME.app.dSYM.zip" \
+  -F dsym="@$OUTPUTDIR/$APP_NAME.app.dSYM" \
   -F api_token="$TESTFLIGHT_API_TOKEN" \
   -F team_token="$TESTFLIGHT_TEAM_TOKEN" \
   -F distribution_lists='Internal' \
