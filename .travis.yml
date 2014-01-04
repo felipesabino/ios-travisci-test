@@ -1,3 +1,17 @@
 language: objective-c
-install: echo
-script: xctool -workspace TravisCiIntegration.xcworkspace -scheme TravisCiIntegration
+install: travis/install.sh
+script: travis/script.sh
+before_script:
+- ./travis/decrypt-certs.sh
+- ./travis/add-key.sh
+after_script:
+- ./travis/remove-key.sh
+after_success:
+- ./travis/sign-and-upload.sh
+env:
+  global:
+  - APP_NAME="TravisCiIntegration"
+  - 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC (D4S2YEYDL8)"'
+  - PROFILE_NAME="TravisCiIntegration"
+  - secure: LhwhZv4mQPDkt+qGIMhfijAV0FzZGfJxkMetU0/NSvF9sHwJL4aFm9XOrIQd9nCHPL+xuZ5mkL2uhhWbF7Yo6lBLtSp3jjQYedWdocTQF6/MXQh2rCxMW3Az9ajSW/AATESOO/8W0XU2kZomOtG/jmELe7XgbinbYNdF5kb6bmw=
+  - secure: E9sDV8DX4oM159irpo9FR9YHvO4ubb8iFve5kA2YhIvH01yO5pP0l/chDCIYmc8umFU5h8oTgu8iHdF6vUPIiDr5D/KzR5W7dLUB6kJ+fnfYMjsChjacf2zWiYqT9Wt8LP9MUPzF5YIHU8myw2z8G5XEoW7XWmmZX0NwyMUIno4=

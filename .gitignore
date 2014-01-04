@@ -8,3 +8,8 @@ xcuserdata
 
 # Mac OS
 .DS_Store
+
+# Unecnrypted Certs
+travis/certs/dist.cer
+travis/certs/dist.p12
+travis/profile/Taqtile_Travis_Test_Adhoc.mobileprovision
