@@ -8,7 +8,7 @@ Travis-CI test with iOS
 
 - ✔ build
 - ✔ code sign
-- deploy / upload to Test flight
+- ✔ deploy / upload to Test flight
 - generate archive to upload to app store?
 
 
