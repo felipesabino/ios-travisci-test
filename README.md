@@ -14,4 +14,4 @@ Travis-CI test with iOS
 
 # Remarks
 
-Based on http://www.objc.io/issue-6/travis-ci.html
+Based on http://www.objc.io/issue-6/travis-ci.html and https://gist.github.com/johanneswuerbach/5559514
