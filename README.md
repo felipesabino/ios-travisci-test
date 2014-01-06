@@ -1,7 +1,7 @@
 Travis-CI test with iOS
 ===
 
-[![Build Status](https://travis-ci.org/felipesabino/colorconverter.png?branch=master)](https://travis-ci.org/felipesabino/colorconverter)
+[![Build Status](https://travis-ci.org/felipesabino/ios-travisci-test.png?branch=master)](https://travis-ci.org/felipesabino/ios-travisci-test)
 
 
 # TODO
