@@ -18,6 +18,5 @@ env:
   - secure: DpV+Rd32LNQptLvxF4CX/LnQUPIp7Oj7gZBClCeEKV1s0safMUliGLfeAxi6TBo0rUACEJ9sLPzizElOc+NZPPm+2v86mGN/eqlVeVQVomNbx9tGt7WInDad5q4zRJTNj4TnotsBC4j9N7ndeaqU82ulGjiOFt41KirHznoaMjM=
   - secure: Q6JxyDL8F35s7nRFbd7Lk+WskmxWHrYbzH1URqVDnzXWBxGUgPTuPXGogiD3IAAOGpfk4sa1mksedTd+T3Zt8d9Lsmc+ZQBXJRIjhPQ5wEKxqJ6HSKWd+6GXZXCq/N4fPP5V6+mAgmhlkBfzaiBJjIOH60f5WuzEmtZ5OMQ1Aik=
   matrix:
-  - A="A"
-  - A="AA"
-  - B="B"
+  - A="A";B="B"
+  - A="AA";B="BB"
