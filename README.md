@@ -1,14 +1,14 @@
 Travis-CI test with iOS
 ===
 
-[![Build Status](https://travis-ci.org/felipesabino/colorconverter.png?branch=master)](https://travis-ci.org/felipesabino/colorconverter)
+[![Build Status](https://travis-ci.org/felipesabino/ios-travisci-test.png?branch=master)](https://travis-ci.org/felipesabino/ios-travisci-test)
 
 
 # TODO
 
 - ✔ build
 - ✔ code sign
-- deploy / upload to Test flight
+- ✔ deploy / upload to Test flight
 - generate archive to upload to app store?
 
 
