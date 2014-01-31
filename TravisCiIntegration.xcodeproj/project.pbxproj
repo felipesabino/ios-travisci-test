@@ -424,7 +424,7 @@
 				GCC_PREFIX_HEADER = "TravisCiIntegration/TravisCiIntegration-Prefix.pch";
 				INFOPLIST_FILE = "TravisCiIntegration/TravisCiIntegration-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C707E6CF-1903-4694-9B5A-73A73164D193";
+				PROVISIONING_PROFILE = "50E040B7-69B9-4300-82D9-B72F61DC8744";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,7 +440,7 @@
 				GCC_PREFIX_HEADER = "TravisCiIntegration/TravisCiIntegration-Prefix.pch";
 				INFOPLIST_FILE = "TravisCiIntegration/TravisCiIntegration-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C707E6CF-1903-4694-9B5A-73A73164D193";
+				PROVISIONING_PROFILE = "50E040B7-69B9-4300-82D9-B72F61DC8744";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
