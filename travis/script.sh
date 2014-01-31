@@ -15,3 +15,12 @@ xctool -workspace TravisCiIntegration.xcworkspace -scheme TravisCiIntegration -s
 echo "--> ls -la $PWD/build"
 
 ls -la $PWD/build
+
+
+echo "find ~/Library/Developer/Xcode/Archives -type d -Btime -5m -name '*.xcarchive'"
+
+find ~/Library/Developer/Xcode/Archives -type d -Btime -5m -name '*.xcarchive'
+
+echo "ls -la ~/Library/Developer/Xcode/Archives"
+
+ls -la ~/Library/Developer/Xcode/Archives
