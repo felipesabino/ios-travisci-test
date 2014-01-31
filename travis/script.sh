@@ -16,11 +16,11 @@ echo "--> ls -la $PWD/build"
 
 ls -la $PWD/build
 
+echo "zipping archive"
 
-echo "find ~/Library/Developer/Xcode/Archives -type d -Btime -5m -name '*.xcarchive'"
+find ~/Library/Developer/Xcode/Archives -type d -Btime -50m -name '*.xcarchive' | head -n 1 | xargs -0 -J {} zip -r -9 build/archive.zip {}
 
-find ~/Library/Developer/Xcode/Archives -type d -Btime -5m -name '*.xcarchive'
 
-echo "ls -la ~/Library/Developer/Xcode/Archives"
+echo "ls -la ./build"
 
-ls -la ~/Library/Developer/Xcode/Archives
+ls -la ./build
