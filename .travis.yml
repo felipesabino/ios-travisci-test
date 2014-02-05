@@ -22,17 +22,19 @@ deploy:
   bucket: "$AMAZON_BUCKET"
   skip_cleanup: true
   local-dir: "$BUILD_PATH"
-  upload-dir: "$AMAZON_BUCKET_DIR"
+  upload-dir: "$AMAZON_UPLOAD_DIR"
   on:
-    condition: "$BUILD_ENVIRONMENT = Production"
+    condition: "$BUILD_ENVIRONMENT = $BUILD_ENVIRONMENT_PRODUCTION"
 
 env:
   matrix:
-  - BUILD_ENVIRONMENT="Staging"
-  - BUILD_ENVIRONMENT="Production"
+  - BUILD_ENVIRONMENT="$BUILD_ENVIRONMENT_STAGING"
+  - BUILD_ENVIRONMENT="$BUILD_ENVIRONMENT_PRODUCTION"
   global:
 
   - BUILD_PATH="$TRAVIS_BUILD_DIR/build"
+  - BUILD_ENVIRONMENT_STAGING="Staging"
+  - BUILD_ENVIRONMENT_PRODUCTION="Production"
 
   # VALUES FROM XCODE
 
@@ -51,15 +53,14 @@ env:
   - PROFILE_NAME="Taqtile Travis Test Adhoc"
 
   # VALUES FROM TESTFLIGHT
-  - TESTFLIGHT_DISTRIBUTION_BRANCH="ios-staging"
+  - TESTFLIGHT_DISTRIBUTION_BRANCH="master"
   - TESTFLIGHT_DISTRIBUTION_LIST="Taqtile"
-  - TESTFLIGHT_BUILD_ENVIRONMENT="Staging"
+  - TESTFLIGHT_BUILD_ENVIRONMENT="$BUILD_ENVIRONMENT_STAGING"
 
   # VALUE FROM S3
 
-  - AMAZON_UPLOAD_DIR="ios-travis-test"
+  - AMAZON_UPLOAD_DIR="ios-travis-test/build-$TRAVIS_BUILD_NUMBER"
   - AMAZON_BUCKET="taqtile-travis"
-  - AMAZON_BUCKET_DIR="AMAZON_BUCKET"
 
   # #############################
 
