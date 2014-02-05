@@ -26,6 +26,8 @@ env:
   # Shame base name. Example: from "MyiOSApp-Staging" sheme, the APP_SCHEMA_BASE_NAME value would be "MyiOSApp"
   - APP_SCHEMA_BASE_NAME="TravisCiIntegration"
   - APP_WORKSPACE_FILE_NAME="TravisCiIntegration"
+  # Look inside the main target properties -> build settings -> Product Name
+  - APP_PRODUCT_NAME="TravisCiIntegration"
 
   # VALUES FROM APPLE DEVELOPER PORTAL - GET THEM FROM AN ADMIN
 
