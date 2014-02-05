@@ -15,16 +15,27 @@ after_script:
 - travis/scripts/remove-key.sh
 after_success:
 - travis/scripts/sign-and-upload.sh
+after_deploy:
+- travis/scripts/after-deploy.sh
 deploy:
-  provider: s3
-  access_key_id: "$AMAZON_ACCESS_KEY"
-  secret_access_key: "$AMAZON_SECRET_KEY"
-  bucket: "$AMAZON_BUCKET"
-  skip_cleanup: true
-  local-dir: "$BUILD_PATH"
-  upload-dir: "$AMAZON_UPLOAD_DIR"
-  on:
-    condition: "$BUILD_ENVIRONMENT = $BUILD_ENVIRONMENT_PRODUCTION"
+  - provider: s3
+    access_key_id: "$AMAZON_ACCESS_KEY"
+    secret_access_key: "$AMAZON_SECRET_KEY"
+    bucket: "$AMAZON_BUCKET"
+    skip_cleanup: true
+    local-dir: "$BUILD_ASSETS_PATH"
+    upload-dir: "$AMAZON_UPLOAD_DIR"
+    on:
+      condition: "$BUILD_ENVIRONMENT = $BUILD_ENVIRONMENT_PRODUCTION"
+  - provider: s3
+    access_key_id: "$AMAZON_ACCESS_KEY"
+    secret_access_key: "$AMAZON_SECRET_KEY"
+    bucket: "$AMAZON_BUCKET"
+    skip_cleanup: true
+    local-dir: "$BUILD_ASSETS_PATH"
+    upload-dir: "$AMAZON_UPLOAD_DIR"
+    on:
+      condition: "$BUILD_ENVIRONMENT = $BUILD_ENVIRONMENT_STAGING"
 
 env:
   matrix:
@@ -32,7 +43,11 @@ env:
   - BUILD_ENVIRONMENT="$BUILD_ENVIRONMENT_PRODUCTION"
   global:
 
+  # where archive is going to be located
   - BUILD_PATH="$TRAVIS_BUILD_DIR/build"
+  # assets path is used to store things to be upload to S3
+  - BUILD_ASSETS_PATH="$TRAVIS_BUILD_DIR/build-assets"
+  # both environments variables to be used by the build matrix
   - BUILD_ENVIRONMENT_STAGING="Staging"
   - BUILD_ENVIRONMENT_PRODUCTION="Production"
 
@@ -59,8 +74,9 @@ env:
 
   # VALUE FROM S3
 
-  - AMAZON_UPLOAD_DIR="ios-travis-test/build-$TRAVIS_BUILD_NUMBER"
+  - AMAZON_UPLOAD_DIR="ios-travis-test/build-$TRAVIS_BUILD_NUMBER-$BUILD_ENVIRONMENT"
   - AMAZON_BUCKET="taqtile-travis"
+
 
   # #############################
 
