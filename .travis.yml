@@ -6,7 +6,7 @@ script:
 - travis/scripts/build-production.sh
 before_script:
 # add executable permission to all scripts in the "scripts" folder before any executions
-- cd $PWD/scripts; ls . | grep .sh | xargs -L -0 -J {} chmod a+x {}; cd $PWD
+- cd $TRAVIS_BUILD_DIR/travis/scripts; ls . | grep .sh | xargs -L -0 -J {} chmod a+x {}; cd $TRAVIS_BUILD_DIR
 - travis/scripts/decrypt-certs.sh
 - travis/scripts/add-key.sh
 after_script:
