@@ -1,18 +1,42 @@
 language: objective-c
-install: travis/install.sh
-script: travis/script.sh
+install:
+- travis/scripts/install.sh
+script:
+- travis/scripts/build-staging.sh
+- travis/scripts/build-production.sh
 before_script:
-- travis/decrypt-certs.sh
-- travis/add-key.sh
+# add executable permission to all scripts in the "scripts" folder before any executions
+- cd $PWD/scripts; ls . | grep .sh | xargs -L -0 -J {} chmod a+x {}; cd $PWD
+- travis/scripts/decrypt-certs.sh
+- travis/scripts/add-key.sh
 after_script:
-- travis/remove-key.sh
+- travis/scripts/remove-key.sh
 after_success:
-- travis/sign-and-upload.sh
+- travis/scripts/sign-and-upload.sh
 env:
   global:
-  - APP_NAME="TravisCiIntegration"
-  - ! 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC"'
-  - PROFILE_NAME="Taqtile_Travis_Test_Adhoc"
+
+  # VALUES FROM XCODE
+
+  # Shame base name. Example: from "MyiOSApp-Staging" sheme, the APP_SCHEMA_BASE_NAME value would be "MyiOSApp"
+  - APP_SCHEMA_BASE_NAME="TravisCiIntegration"
+  - APP_WORKSPACE_FILE_NAME="TravisCiIntegration"
+
+  # VALUES FROM APPLE DEVELOPER PORTAL - GET THEM FROM AN ADMIN
+
+  # Profile name, copy it from the KeyChain
+  - 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC"'
+  # Profile name found in iphone configuration utility (not the profile name)
+  # http://support.apple.com/downloads/#iphone configuration utility
+  - PROFILE_NAME="Taqtile Travis Test Adhoc"
+
+  # ENCRYPTED VARIABLES
+
+  # KEY_PASSWORD
+  # ENCRYPTION_SECRET
+  # TESTFLIGHT_API_TOKEN
+  # TESTFLIGHT_TEAM_TOKEN
+
   - secure: LhwhZv4mQPDkt+qGIMhfijAV0FzZGfJxkMetU0/NSvF9sHwJL4aFm9XOrIQd9nCHPL+xuZ5mkL2uhhWbF7Yo6lBLtSp3jjQYedWdocTQF6/MXQh2rCxMW3Az9ajSW/AATESOO/8W0XU2kZomOtG/jmELe7XgbinbYNdF5kb6bmw=
   - secure: E9sDV8DX4oM159irpo9FR9YHvO4ubb8iFve5kA2YhIvH01yO5pP0l/chDCIYmc8umFU5h8oTgu8iHdF6vUPIiDr5D/KzR5W7dLUB6kJ+fnfYMjsChjacf2zWiYqT9Wt8LP9MUPzF5YIHU8myw2z8G5XEoW7XWmmZX0NwyMUIno4=
   - secure: DpV+Rd32LNQptLvxF4CX/LnQUPIp7Oj7gZBClCeEKV1s0safMUliGLfeAxi6TBo0rUACEJ9sLPzizElOc+NZPPm+2v86mGN/eqlVeVQVomNbx9tGt7WInDad5q4zRJTNj4TnotsBC4j9N7ndeaqU82ulGjiOFt41KirHznoaMjM=
