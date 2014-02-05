@@ -15,11 +15,24 @@ after_script:
 - travis/scripts/remove-key.sh
 after_success:
 - travis/scripts/sign-and-upload.sh
+deploy:
+  provider: s3
+  access_key_id: "$AMAZON_ACCESS_KEY"
+  secret_access_key: "$AMAZON_SECRET_KEY"
+  bucket: "$AMAZON_BUCKET"
+  skip_cleanup: true
+  local-dir: "$BUILD_PATH"
+  upload-dir: "$AMAZON_BUCKET_DIR"
+  on:
+    condition: "$BUILD_ENVIRONMENT = Production"
+
 env:
   matrix:
   - BUILD_ENVIRONMENT="Staging"
   - BUILD_ENVIRONMENT="Production"
   global:
+
+  - BUILD_PATH="$TRAVIS_BUILD_DIR/build"
 
   # VALUES FROM XCODE
 
@@ -37,6 +50,19 @@ env:
   # http://support.apple.com/downloads/#iphone configuration utility
   - PROFILE_NAME="Taqtile Travis Test Adhoc"
 
+  # VALUES FROM TESTFLIGHT
+  - TESTFLIGHT_DISTRIBUTION_BRANCH="ios-staging"
+  - TESTFLIGHT_DISTRIBUTION_LIST="Taqtile"
+  - TESTFLIGHT_BUILD_ENVIRONMENT="Staging"
+
+  # VALUE FROM S3
+
+  - AMAZON_UPLOAD_DIR="ios-travis-test"
+  - AMAZON_BUCKET="taqtile-travis"
+  - AMAZON_BUCKET_DIR="AMAZON_BUCKET"
+
+  # #############################
+
   # ENCRYPTED VARIABLES
 
   # KEY_PASSWORD
@@ -48,3 +74,10 @@ env:
   - secure: E9sDV8DX4oM159irpo9FR9YHvO4ubb8iFve5kA2YhIvH01yO5pP0l/chDCIYmc8umFU5h8oTgu8iHdF6vUPIiDr5D/KzR5W7dLUB6kJ+fnfYMjsChjacf2zWiYqT9Wt8LP9MUPzF5YIHU8myw2z8G5XEoW7XWmmZX0NwyMUIno4=
   - secure: DpV+Rd32LNQptLvxF4CX/LnQUPIp7Oj7gZBClCeEKV1s0safMUliGLfeAxi6TBo0rUACEJ9sLPzizElOc+NZPPm+2v86mGN/eqlVeVQVomNbx9tGt7WInDad5q4zRJTNj4TnotsBC4j9N7ndeaqU82ulGjiOFt41KirHznoaMjM=
   - secure: Q6JxyDL8F35s7nRFbd7Lk+WskmxWHrYbzH1URqVDnzXWBxGUgPTuPXGogiD3IAAOGpfk4sa1mksedTd+T3Zt8d9Lsmc+ZQBXJRIjhPQ5wEKxqJ6HSKWd+6GXZXCq/N4fPP5V6+mAgmhlkBfzaiBJjIOH60f5WuzEmtZ5OMQ1Aik=
+
+  # VALUES FROM S3
+
+  # AMAZON_ACCESS_KEY
+  - secure: "Fl5assTznLbtKcPH3Xl+zR+NP55+aZ06RYNaHenhbtwA2SOJEAv0y3pwyfrTL/9KeNh5ZeU4x/aFfb3c7oYAU9WRtnJG93ZFUcCXfL+5o22hpUftrf0PahVE2N4dPymeIsGo0L6ceG5D3zvsjgTcj0wct3V6tZzw2l5+QyuWQss="
+  # AMAZON_SECRET_KEY
+  - secure: "Y8vGhY8VhGfIZ0/Couu3Jp1HkCzHuqIPTC5Onsir4aah0FcsmMr2qmmwp2czD393cFD6ihTbOg12O2cG+uArdQwq3+N5bL5eTv0hOmHSHom4Vuk5pA1DRV8SPpp6xz+qzqYFvvOV/yRiM3PdAahxyFS5soD2q+neMlsgZcyo1Lo="
