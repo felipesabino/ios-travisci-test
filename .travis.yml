@@ -2,9 +2,11 @@ language: objective-c
 install:
 - travis/scripts/install.sh
 script:
-- travis/scripts/build-staging.sh
-- travis/scripts/build-production.sh
+- travis/scripts/build.sh
 before_script:
+# ignore cases for folders and file names
+# http://blog.nickburwell.com/blog/2008/11/mac-os-x-terminal-case-insensitive-auto
+- echo "set completion-ignore-case On" >> ~/.inputrc
 # add executable permission to all scripts in the "scripts" folder before any executions
 - cd $TRAVIS_BUILD_DIR/travis/scripts; ls . | grep .sh | xargs -L -0 -J {} chmod a+x {}; cd $TRAVIS_BUILD_DIR
 - travis/scripts/decrypt-certs.sh
@@ -14,6 +16,9 @@ after_script:
 after_success:
 - travis/scripts/sign-and-upload.sh
 env:
+  matrix:
+  - BUILD_ENVIRONMENT="Staging"
+  - BUILD_ENVIRONMENT="Production"
   global:
 
   # VALUES FROM XCODE

@@ -15,11 +15,11 @@ fi
 RELEASE_DATE=`date '+%Y-%m-%d %H:%M:%S'`
 RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER - Uploaded: $RELEASE_DATE"
 
-zip -r -9 "$PWD/$APP_SCHEMA_BASE_NAME.app.dSYM.zip" "$PWD/archive.xcarchive/dSYMs/$APP_SCHEMA_BASE_NAME.app.dSYM"
+zip -r -9 "$TRAVIS_BUILD_DIR/$APP_SCHEMA_BASE_NAME.app.dSYM.zip" . -i "$TRAVIS_BUILD_DIR/archive.xcarchive/dSYMs/$APP_SCHEMA_BASE_NAME.app.dSYM"
 
 curl http://testflightapp.com/api/builds.json \
-  -F file="@$PWD/$APP_SCHEMA_BASE_NAME.ipa" \
-  -F dsym="@$PWD/$APP_SCHEMA_BASE_NAME.app.dSYM.zip" \
+  -F file="@$TRAVIS_BUILD_DIR/$APP_SCHEMA_BASE_NAME.ipa" \
+  -F dsym="@$TRAVIS_BUILD_DIR/$APP_SCHEMA_BASE_NAME.app.dSYM.zip" \
   -F api_token="$TESTFLIGHT_API_TOKEN" \
   -F team_token="$TESTFLIGHT_TEAM_TOKEN" \
   -F notify=true \
