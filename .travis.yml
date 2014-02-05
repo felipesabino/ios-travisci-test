@@ -25,7 +25,7 @@ env:
   # VALUES FROM APPLE DEVELOPER PORTAL - GET THEM FROM AN ADMIN
 
   # Profile name, copy it from the KeyChain
-  - 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC"'
+  - 'DEVELOPER_NAME="iPhone Distribution: Taqtile Mobility, LLC (D4S2YEYDL8)"'
   # Profile name found in iphone configuration utility (not the profile name)
   # http://support.apple.com/downloads/#iphone configuration utility
   - PROFILE_NAME="Taqtile Travis Test Adhoc"
