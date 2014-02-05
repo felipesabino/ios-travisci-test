@@ -14,8 +14,8 @@ security import $PWD/travis/certs/dist.staging.cer -k ~/Library/Keychains/ios-bu
 security import $PWD/travis/certs/dist.production.cer -k ~/Library/Keychains/ios-build-production.keychain -T /usr/bin/codesign
 
 echo "Adding private keys..."
-security import $PWD/travis/certs/dist.staging.p12 -k ~/Library/Keychains/ios-build-staging.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
-security import $PWD/travis/certs/dist.production.p12 -k ~/Library/Keychains/ios-build-production.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
+security import $PWD/travis/keys/dist.staging.p12 -k ~/Library/Keychains/ios-build-staging.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
+security import $PWD/travis/keys/dist.production.p12 -k ~/Library/Keychains/ios-build-production.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
 
 echo "Copying provisioning profiles..."
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
